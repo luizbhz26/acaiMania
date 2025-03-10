@@ -39,7 +39,19 @@
     border-radius: 24px;
     padding: 1em;
     width: 100%;
-    
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.2s, background-color 0.3s;
+}
+.banner__pesquisa:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+    box-shadow: 0 0 10px var(--branco), 0 0 20px var(--branco), 0 0 30px var(--branco); /* Glow effect */
+    transform: scale(1.05);
+}
+
+.banner__pesquisa:active {
+    transform: scale(0.95);
 }
 .banner__pesquisa::placeholder {
     font-family: var(--fonte-principal);

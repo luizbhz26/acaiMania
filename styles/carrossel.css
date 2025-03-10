@@ -27,6 +27,7 @@
 }
 
 .swiper-slide img {
+    margin-top: 1em;
     width: 100%;
 }
 .swiper-running {

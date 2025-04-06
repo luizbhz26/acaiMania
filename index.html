@@ -281,13 +281,11 @@
                         <!-- 1º coluna -->
                         <div class="descrição">
                             <h3 class="descrição__titulo">Last News!</h3>
-                            <h2 class="descrição__titulo-livro">Saint Patricks Parede</h2>
-                            <p class="descrição__texto">"Join us for the 20th St. Patrick’s Parade in Yarmouth! ☘️🎉
-                                
-                                Come celebrate with festive floats, music, and plenty of Irish spirit! Don’t miss the fun—bring your family and friends! 🍀🎶"</p>
+                            <h2 class="descrição__titulo-livro">Spring is here!</h2>
+                            <p class="descrição__texto">🌸 Spring is here, and there's no better way to celebrate than with a delicious açaí bowl or one of our delicious ice cream flavors. Only at Açaí Mania! 🍦</p>
                         </div>
                         <!-- 2º coluna -->
-                        <img src="img/stPat.png" class="descrição__imagem">
+                        <img src="img/spring.png" class="descrição__imagem">
                     </div>
 
                     <!-- 2º linha -->
@@ -470,6 +468,55 @@
                             <p class="rodape__texto">® 2025 AÇAÍ MANIA. All Rights Reserved.</p>
                             <p class="rodape__texto">Do you need a Website? Call me (508)280-3055.</p>
                         </footer>
+                        <!-- ChatBot 
+                        <div class="chat-container">
+                            <title>Chatbot - Sorveteria</title>
+                            <div class="chat-box" id="chat-box"></div>
+                            <div class="input-container">
+                                <input type="text" id="user-input" placeholder="Posso te ajudar?">
+                                <button onclick="sendMessage()">Send</button>
+                            </div>
+                        </div>
+                            
+
+                        <script>
+                            let lastQuestion = "";
+                    
+                            function sendMessage() {
+                                let userInput = document.getElementById("user-input").value;
+                                let chatBox = document.getElementById("chat-box");
+                                if (userInput.trim() === "") return;
+                    
+                                chatBox.innerHTML += `<div><strong>Você:</strong> ${userInput}</div>`;
+                                document.getElementById("user-input").value = "";
+                                
+                                setTimeout(() => {
+                                    let botResponse = getBotResponse(userInput);
+                                    chatBox.innerHTML += `<div><strong>Bot:</strong> ${botResponse}</div>`;
+                                    chatBox.scrollTop = chatBox.scrollHeight;
+                                }, 500);
+                            }
+                    
+                            function getBotResponse(input) {
+                                input = input.toLowerCase();
+                                if (lastQuestion === "qual o preço do sorvete?" && input === "sim") {
+                                    lastQuestion = "";
+                                    return "Aqui está o nosso cardápio: <a href='https://www.acaimaniacapecod.com' target='_blank'>www.acaimaniacapecod.com</a>";
+                                }
+                                
+                                const responses = {
+                                    "olá" : "Olá! Bem-vindo à nossa sorveteria. Como posso te ajudar?",
+                                    "quais sabores vocês têm?": "Temos chocolate, morango, baunilha, pistache e muito mais!",
+                                    "qual o horário de funcionamento?": "Estamos abertos todos os dias das 10h às 22h!",
+                                    "vocês fazem entrega?": "Sim! Você pode pedir pelo nosso site ou aplicativo de delivery parceiro.",
+                                    "qual o preço do sorvete?": "Os preços variam de acordo com o tamanho e sabor. Quer um cardápio?"
+                                };
+                                
+                                lastQuestion = input;
+                                return responses[input] || "Desculpe, não entendi. Você pode perguntar sobre sabores, preços ou horários!";
+                            }
+                        </script>
+                         -->
 </body>
 
 </html>
